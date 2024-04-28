@@ -3,20 +3,15 @@
 This is a simple command-line tool written in Go that sends HTTP requests to a specified URL and checks the response codes. Its goal is to test web applications and servers for a rate limit implementation. It's useful for evaluating how well your server handles requests and responses under different rate limit scenarios.
 
 ## Features
+
+![Terminal usage example](screenshot.png)
+
 - Send HTTP requests to a specified URL
 - Specify custom HTTP headers
 - Set expected HTTP success and error codes
 - Set the duration to send requests
 
 ## Usage
-You can use the following command-line flags to customize the behavior of the tool:
-```
--u string: URL to test
--H string: Specify headers (e.g., "Myheader: test")
---success int: Expected HTTP success code (default 200)
---error int: Expected HTTP error code (default 429)
--t int: Set duration(seconds) to send maximum number of requests
-```
 Example usage:
 
 ```bash
